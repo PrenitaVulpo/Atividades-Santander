@@ -15,6 +15,8 @@ const pokemonFetching = () => {
 
 		console.log('Resultado:', resolvedList);
 	});
+
+	return resolvedList;
 };
 
 export default pokemonFetching;
