@@ -1,3 +1,3 @@
-import fetchPokemon from "./JS";
+import fetchPokemon from './JS/fetchPokemon.js';
 
 fetchPokemon();
