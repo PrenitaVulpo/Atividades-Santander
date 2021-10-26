@@ -3,14 +3,14 @@ const pokemonURLFetch = (name) =>
 
 const pokemonList = ['articuno', 'zapdos', 'moltres'];
 
-const pokemonFetching = () => {
+const pokemonFetching = async () => {
 	const promises = pokemonList.map((pokemon) =>
 		fetch(pokemonURLFetch(pokemon)).then((response) => response.json()),
 	);
 
 	const resolvedList = [];
 
-	Promise.all(promises).then((pokemons) => {
+	await Promise.all(promises).then((pokemons) => {
 		resolvedList.push(...pokemons);
 
 		console.log('Resultado:', resolvedList);
