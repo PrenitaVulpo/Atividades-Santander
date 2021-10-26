@@ -2,6 +2,8 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	margin-bottom: 2rem;
+	padding: 0 2rem;
 }
 
 .card {
@@ -9,4 +11,17 @@
 	flex-direction: column;
 	align-items: center;
 	box-sizing: content-box;
+	padding: 0.25rem;
+}
+
+.ice {
+	background-color: #005273;
+}
+
+.electric {
+	background-color: #d5ac08;
+}
+
+.fire {
+	background-color: #d50808;
 }
