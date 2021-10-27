@@ -12,11 +12,11 @@ const loadPage = async () => {
 
 	const actionButton = document.querySelector('.activate');
 
-	actionButton.addEventListener('click', () => {
-		compareStats();
-	});
-
 	const statProfiles = generateStatProfiles(pokemons);
+
+	actionButton.addEventListener('click', () => {
+		compareStats(statProfiles);
+	});
 };
 
 loadPage();
