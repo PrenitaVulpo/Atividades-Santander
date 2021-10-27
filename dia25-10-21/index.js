@@ -1,6 +1,7 @@
 import fetchPokemon from './JS/fetchPokemon.js';
 import appendCards from './JS/appendCards.js';
 import generateStatProfiles from './JS/generateStatProfiles.js';
+import compareStats from './JS/compareStats.js';
 
 const loadPage = async () => {
 	const pokemons = await fetchPokemon();
@@ -10,20 +11,12 @@ const loadPage = async () => {
 	appendCards(pokemons, cardsArea);
 
 	const actionButton = document.querySelector('.activate');
-	const listItem = document.querySelector('.attribute-selector');
 
 	actionButton.addEventListener('click', () => {
-		console.log(listItem.value);
+		compareStats();
 	});
 
-	if (listItem.value) {
-		let champion = null;
-		let statToCompare = pokemon.stats[listItem.value].base_stat;
-
-		console.log(statToCompare);
-	}
-
-	generateStatProfiles(pokemons);
+	const statProfiles = generateStatProfiles(pokemons);
 };
 
 loadPage();

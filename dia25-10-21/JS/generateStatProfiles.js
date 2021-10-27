@@ -15,7 +15,7 @@ const generateStatProfiles = (pokemons) => {
 		return accumulator;
 	}, {});
 
-	console.log('profile: ', statProfile);
+	return statProfile;
 };
 
 export default generateStatProfiles;
