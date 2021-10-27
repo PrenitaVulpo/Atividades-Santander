@@ -12,8 +12,6 @@ const pokemonFetching = async () => {
 
 	await Promise.all(promises).then((pokemons) => {
 		resolvedList.push(...pokemons);
-
-		console.log('Resultado:', resolvedList);
 	});
 
 	return resolvedList;

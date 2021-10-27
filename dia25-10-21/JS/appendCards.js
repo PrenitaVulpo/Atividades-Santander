@@ -1,11 +1,8 @@
 const appendCards = (pokemons, cardsArea) => {
-	console.log(pokemons);
 	const pokemonCards = pokemons.reduce((accumulator, pokemon) => {
 		const pokemonImg = pokemon.sprites.front_default;
 
 		const attributes = pokemon.stats;
-
-		console.log(attributes);
 
 		accumulator += `<div class="card ${pokemon.types[0].type.name}">
 		<img src='${pokemonImg}' />
