@@ -18,6 +18,8 @@ const compareStats = (statProfiles) => {
 				}
 			});
 		}
+	} else {
+		resultSpan.textContent = 'please select a valid stat';
 	}
 
 	resultSpan.textContent = `The champion is: ${champion}`;
