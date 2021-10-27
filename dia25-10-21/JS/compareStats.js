@@ -20,7 +20,7 @@ const compareStats = (statProfiles) => {
 		}
 	}
 
-	console.log(champion);
+	resultSpan.textContent = `The champion is: ${champion}`;
 };
 
 export default compareStats;
